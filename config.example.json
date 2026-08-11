@@ -1,0 +1,7 @@
+{
+  "bot_id": "替换为企业微信智能机器人 Bot ID",
+  "bot_secret": "替换为企业微信智能机器人 Secret",
+  "target_id": "接收通知的企业微信 userid 或群聊 chatid",
+  "include_summary": true,
+  "max_message_chars": 3500
+}
