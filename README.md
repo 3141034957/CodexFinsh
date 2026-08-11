@@ -83,3 +83,5 @@ uv run pytest
 ```
 
 没有真实 Bot ID/Secret 时，单元测试不会连接企业微信。
+
+使用hook方案实现，兼容codebuddy、claude
