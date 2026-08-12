@@ -69,11 +69,11 @@ uv run codex-wecom-send '这是一条连通性测试。'
 | `bot_id` | 智能机器人 Bot ID | 必填 |
 | `bot_secret` | 智能机器人 Secret | 必填 |
 | `target_id` | 接收人的 userid 或群聊 chatid | 必填 |
-| `include_summary` | 是否附带不超过 50 字的完成摘要 | `true` |
+| `include_summary` | 是否附带不超过 200 字的完成摘要 | `true` |
 | `max_message_chars` | 通知最大字符数 | `3500` |
 | `ws_url` | 私有部署企业的 WebSocket 地址 | 官方公网地址 |
 
-通知默认包含项目、模型、完成时间、当前一轮不超过 50 字的用户提示词，以及不超过 50 字的完成摘要。把 `include_summary` 改为 `false` 可关闭完成摘要；当前提示词仍会发送。
+通知默认包含项目、模型、完成时间、当前一轮不超过 200 字的用户提示词，以及不超过 200 字的完成摘要。把 `include_summary` 改为 `false` 可关闭完成摘要；当前提示词仍会发送。
 
 ## 开发与测试
 

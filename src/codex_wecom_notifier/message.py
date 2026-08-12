@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Any
 
 
-SUMMARY_MAX_CHARS = 50
+SUMMARY_MAX_CHARS = 200
 
 
 def format_notification(
@@ -30,11 +30,11 @@ def format_notification(
         f"> **模型：** {model}",
         f"> **时间：** {timestamp}",
         "",
-        "**任务内容（50字内）**",
+        "**任务内容（200字内）**",
         session_prompt,
     ]
     if include_summary:
-        parts.extend(["", "**完成摘要（50字内）**", summary])
+        parts.extend(["", "**完成摘要（200字内）**", summary])
     content = "\n".join(parts)
     return truncate(content, max_chars)
 
